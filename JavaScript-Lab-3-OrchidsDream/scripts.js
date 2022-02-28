@@ -90,8 +90,8 @@ console.log(findLowestScore(submissions));
 
 function findAverageScore (array) {
     let averageScore = 0;
-    for (let i = 0; i < array.length; i++) {
-        let currentNum = array[i].score;
+    for (let student of array) {
+        let currentNum = student.score;
         averageScore += currentNum;
     }
     averageScore = averageScore / array.length;
